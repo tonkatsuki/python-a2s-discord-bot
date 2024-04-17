@@ -18,9 +18,11 @@ For discord bot setup go to discord.com/developers/ and make a new application. 
 Join the discord bot by making a Oauth2 URL Generator and select 'bot' for the scope.
 Once joined, I scoped the bot to only have access to the channel used for the channel_ID (you can get this via right clicking a channel and clicking copy channel id)
 
-So far the permissions it just needs are
+So far the permissions it just needs for the channel are:
+```
   View Channel
   Send Messages
   Embed Links
   Manage Messages
   Read Message History
+```
