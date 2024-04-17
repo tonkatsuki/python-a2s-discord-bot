@@ -9,6 +9,11 @@ servers = {
     ('$IP2HERE', 27015): {"fqdn": "bhop.test.com", "Game": "Counter-Strike 2"},  
 
 }
+... other code...
+async def query_servers():
+    embed = discord.Embed(title="Server Status", description="$DESCRIPTIONHERE", color=discord.Color.blue())
+    embed.set_thumbnail(url="$THUMBNAIL IF WANTED")
+
 ```
 
 Edit these vars in the script.
