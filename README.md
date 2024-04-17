@@ -1,5 +1,6 @@
 Quick and dirty python script that leverage discord's bot functionality to query a2s servers and find (if available) old post in a channel and edit or makes a new one
 
+```
 TOKEN = $'TOKENHERE'
 CHANNEL_ID = $CHANNELIDHERE
 
@@ -8,6 +9,7 @@ servers = {
     ('$IP2HERE', 27015): {"fqdn": "bhop.test.com", "Game": "Counter-Strike 2"},  
 
 }
+```
 
 Edit these vars in the script.
 
