@@ -22,7 +22,9 @@ async def query_servers():
         try:
             server_info = a2s.info(address)
             player_count = len(a2s.players(address))
-            field_value = f"**Game:** {info['Game']}\n**Map:** {server_info.map_name}\n**Player Count:** {player_count}/{server_info.max_players}"
+            ip_address = address[0] 
+            port = address[1]
+            field_value = f"**Game:** {info['Game']}\n**Map:** {server_info.map_name}\n**Player Count:** {player_count}/{server_info.max_players}\n[Connect via connectsteam.me!](https://connectsteam.me/?{ip_address}:{port})"
             embed.add_field(name=info['fqdn'], value=field_value, inline=False)
         except Exception as e:
             embed.add_field(name=info['fqdn'], value=f"Error querying server: {e}", inline=False)
